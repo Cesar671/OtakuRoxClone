@@ -1,12 +1,14 @@
 import React from 'react'
 import HomePage from './pages/HomePage'
+import Footer from './global/footer/Footer'
 
 const App = () => {
   return (
-    <div>
-      De momento aca llaman a las paginas o hacen sus pruebas, luego aplicamos  un router para las paginas
+    <React.StrictMode>
+      
       <HomePage />
-    </div>
+      <Footer />
+    </React.StrictMode>
   )
 }
 

@@ -1,0 +1,27 @@
+.link_a{
+    border-radius: 20px;
+}
+
+.link_svg{
+    border-radius:50%;
+    font-size: 18px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff !important
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+}
+
+
+
+.link:hover{
+    background-color: #ef5777;
+}
