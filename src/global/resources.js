@@ -1,0 +1,1 @@
+export const URL_LOGO = "./resources/logo.png"

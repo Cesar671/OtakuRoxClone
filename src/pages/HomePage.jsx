@@ -1,8 +1,12 @@
 import React from 'react'
+import MainTmplt from '../global/templates/MainTmplt'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <MainTmplt>
+      <div>Pagina de inicio asdasdasdqeqe</div>
+    </MainTmplt>
+    
   )
 }
 
