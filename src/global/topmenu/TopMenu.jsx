@@ -8,7 +8,7 @@ const ButtonTopMenu = ({ link, name, colors }) => (
           href={ link } 
           className={ styles.topmenu_link }
           style={{
-            color: colors.primary[100]
+            color: colors.primary[900]
           }}
         >
           <div className={ styles.button }>
@@ -22,13 +22,11 @@ const TopMenu = () => {
 
   const { mode, toogleMode } = React.useContext(ColorThemeContext);
   const colors = tokens(mode);
-  console.log(mode)
 
   return (
     <nav 
       style={{
-        backgroundColor: colors.primary[800],
-        color: colors.primary[100],
+        backgroundColor: colors.primary[500],
         display: "flex",
         justifyContent: "center"
       }}
