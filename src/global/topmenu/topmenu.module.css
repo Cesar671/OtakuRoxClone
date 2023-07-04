@@ -1,20 +1,31 @@
 .topmenu_container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
+    display: flex;
     align-items: center;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 22px;
+    position: relative;
+    min-width: 1200px;
+
+}
+
+@media (max-width: 1200px) {
+    .topmenu_container{
+        width: 100%;
+        min-width: 0px;
+    }
 }
 
 .topmenu_link{
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 500;
     text-decoration: none;
 }
 
 .topmenu_button_container{
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
     align-items: center;
+    gap: 10px;
 }
 
 .button{
@@ -35,7 +46,13 @@
 
 
 .img_logo{
-    transform: scale(0.6);
+    height: 40px;
+}
+
+.img_logo_container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .buttonLineStyled{

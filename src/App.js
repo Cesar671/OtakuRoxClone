@@ -7,7 +7,7 @@ const App = () => {
   const [ mode, useModeF ] = useMode();
   return (
     <React.StrictMode >
-      <ColorThemeContext.Provider value= {{ toogleMode: useModeF, mode:mode }}>
+      <ColorThemeContext.Provider value= {{ toogleMode: useModeF.toogleMode, mode: mode }}>
         <HomePage />
       </ColorThemeContext.Provider> 
     </React.StrictMode>

@@ -75,18 +75,18 @@ export const tokens = (mode) => {
     })
 };
 
-export const ColorThemeContext = createContext({
-    toogleMode: () => {},
-    mode: ""
-});
+export const ColorThemeContext = createContext();
 
 export const useMode = () => {
     const [mode, setMode] = useState(LIGHT)
     const useModeF = useMemo(() => ({
-        toogleMode: setMode((mode) => (mode === LIGHT) ? DARK: LIGHT) 
+        toogleMode: () => setMode((prev) => {
+            console.log(prev)
+            return (prev === LIGHT ? DARK: LIGHT)
+        }),
     }),[])
 
-    return  [mode, useModeF] 
+    return  [mode, useModeF]
 }
 
  
