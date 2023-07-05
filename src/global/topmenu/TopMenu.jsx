@@ -3,7 +3,7 @@ import styles from "./topmenu.module.css"
 import { tokens, ColorThemeContext } from "../theme"
 import { URL_LOGO } from '../resources'
 
-const ButtonTopMenu = ({ link, name, colors }) => (
+const ButtonTopMenu = ({ link, name, colors, styleProp }) => (
     <a 
           href={ link } 
           className={ styles.topmenu_link }
@@ -11,10 +11,14 @@ const ButtonTopMenu = ({ link, name, colors }) => (
             color: colors.primary[900]
           }}
         >
-          <div className={ styles.button }>
+        <div className={ styles.button_container_topmenu }>
+          <div className={ styles.button } style={styleProp}>
               { name }
-              <div className={ styles.buttonLineStyled } ></div>
+              
           </div>
+          <div className={ styles.buttonLineStyled } />
+        </div>
+          
         </a>
 )
 
@@ -46,8 +50,14 @@ const TopMenu = () => {
           <ButtonTopMenu link="#" name="Musica" colors={ colors }/>
           <ButtonTopMenu link="#" name="Juegos" colors={ colors }/>
           <ButtonTopMenu link="#" name="Temporada" colors={ colors }/>
-          <ButtonTopMenu link="#" name="Registro" colors={ colors }/>
-          <ButtonTopMenu link="#" name="Iniciar Sesion" colors={ colors }/>
+          <ButtonTopMenu link="#" name="¿Que Ver?" colors={ colors }/>
+          <ButtonTopMenu link="#" name="Registro" colors={ colors } styleProp={
+            {backgroundColor: colors.orange[500], color: "white"}
+          }
+          />
+          <ButtonTopMenu link="#" name="Iniciar Sesion" colors={ colors } styleProp={
+            {backgroundColor: colors.primary[700], color: "white"}
+          }/>
           <button onClick={ toogleMode }> M </button>
           <input type='search' ></input>
         </div>

@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 22px;
+    padding: 19px;
     position: relative;
     min-width: 1200px;
 
@@ -19,29 +19,40 @@
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
+    
+    
+}
+
+.topmenu_link:hover {
+    .buttonLineStyled{
+        visibility: visible;
+        transform: scaleX(5);
+    }
 }
 
 .topmenu_button_container{
     display: flex;
     justify-content: end;
     align-items: center;
-    gap: 10px;
+    gap: 3px;
 }
 
 .button{
-    padding: 5px;
-    border-radius: 5px;
-    transition: 0.3s ease-in-out;
+    padding: 10px;
+    border-radius: 7px;
+    
 }
 
-.button:hover{
-    transform: translateY(0.3em);
-    background-color: black;
-    .buttonLineStyled{
-        transform: scaleX(11em);
-        animation: LineAnimated 0.3s ease forwards;
-    }
-    
+.button_container_topmenu:hover{
+    transform: translateY(0.2em);
+}
+
+.button_container_topmenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
 }
 
 
@@ -56,22 +67,24 @@
 }
 
 .buttonLineStyled{
-    width: 10px;
+    visibility: hidden;
+    width: 3px;
     height: 2px;
     background-color: red;
+    transition: all 0.3s ease-in-out ;
 }
 
 
 @keyframes LineAnimated {
     0%{
-        transform: scaleX(2);
+        transform: scaleX(1);
     }
 
     50%{
-        transform: scaleX(3)
+        transform: scaleX(2)
     }
 
     100%{
-        transform: scaleX(4);
+        transform: scaleX(3);
     }
 }
