@@ -47,7 +47,6 @@ const TopMenu = () => {
       }
 
       window.addEventListener('resize', handleResize)
-      console.log(isCollapsed && isSmallWindows)
       return () => {
         window.removeEventListener('resize', handleResize)
       }

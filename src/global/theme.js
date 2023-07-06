@@ -126,7 +126,6 @@ export const useMode = () => {
     const [mode, setMode] = useState(LIGHT)
     const useModeF = useMemo(() => ({
         toogleMode: () => setMode((prev) => {
-            console.log(prev)
             return (prev === LIGHT ? DARK: LIGHT)
         }),
     }),[])
