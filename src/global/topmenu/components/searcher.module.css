@@ -1,0 +1,17 @@
+.container_searcher{
+    display: flex;
+    gap: 5px;
+    padding: 17px 10px 15px 12px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.input_searcher:focus{
+    outline: none;
+}
+
+.input_searcher{
+    background-color: transparent;
+    border-color: transparent;
+    border-style: none;
+}
