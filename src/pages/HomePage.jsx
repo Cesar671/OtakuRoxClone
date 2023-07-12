@@ -4,7 +4,7 @@ import MainTmplt from '../global/templates/MainTmplt'
 const HomePage = () => {
   return (
     <MainTmplt>
-      <div>Pagina de inicio asdasdasdqeqe</div>
+      <div style={{ height: "1000px" }}>Pagina de inicio asdasdasdqeqe</div>
     </MainTmplt>
     
   )

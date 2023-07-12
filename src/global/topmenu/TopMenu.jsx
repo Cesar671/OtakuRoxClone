@@ -104,7 +104,7 @@ const TopMenu = () => {
             }
             />
             <ButtonTopMenu link="#" name="Iniciar Sesion" colors={ colors } styleProp={
-              {backgroundColor: colors.primary[800], color: "white"}
+              {backgroundColor: colors.menu[800], color: "white"}
             }/>
             <FontAwesomeIcon 
               className={ styles.hand_animation }
