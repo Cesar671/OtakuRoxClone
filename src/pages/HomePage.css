@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background: #660e0e;
+}
+.krs-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.container-left {
+  width: 100%;
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.container-right {
+  width: 100%;
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+@media screen and (min-width: 992px) {
+  .krs-flex {
+    flex-wrap: nowrap;
+  }
+
+  .container-left {
+    width: 75%;
+  }
+
+  .container-right {
+    width: 25%;
+  }
+}
