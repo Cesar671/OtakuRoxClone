@@ -2,10 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 19px;
+    padding: 17px;
     position: relative;
     min-width: 1200px;
-
 }
 
 @media (max-width: 1200px) {
@@ -15,11 +14,51 @@
     }
 }
 
+@media (max-width: 1100px){
+    .topmenu_button_container{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        flex-direction: column;
+        gap: 0px !important;
+        justify-content: center;
+        align-items: center;
+        width: 240px;
+        position: absolute !important;
+        top: 90px;
+        right: 1%;
+    }
+    .topmenu_button_container_before{
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: 20px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent #f0f0f0 transparent;
+    }
+    .button{
+        width: 100%;
+        text-align: start;
+        padding: 8px !important;
+    }
+    .topmenu_link{
+        width: 80%;
+        position: relative;
+    }
+    .buttonLineStyled{
+        width: 0px !important;
+    }
+    .button_container_topmenu:hover{
+        transform: translateY(0) !important;
+        color: #ef5777;
+    }
+}
+
 .topmenu_link{
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
-    
+    position: relative;
     
 }
 
@@ -35,12 +74,14 @@
     justify-content: end;
     align-items: center;
     gap: 3px;
+    border-radius: 7px;
+    position: relative;
 }
 
 .button{
-    padding: 10px;
-    border-radius: 7px;
-    
+    padding: 8px;
+    border-radius: 5px;
+    white-space: nowrap;
 }
 
 .button_container_topmenu:hover{
@@ -74,17 +115,22 @@
     transition: all 0.3s ease-in-out ;
 }
 
-
-@keyframes LineAnimated {
-    0%{
-        transform: scaleX(1);
-    }
-
-    50%{
-        transform: scaleX(2)
-    }
-
-    100%{
-        transform: scaleX(3);
-    }
+.setVisible{
+    visibility: visible;
 }
+
+.hand_animation:hover {
+    animation-name: handMovement;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes handMovement {
+    0% {
+      transform: rotate(-40deg)
+    }
+    30% {
+      transform: rotate(270deg);
+    }
+  }

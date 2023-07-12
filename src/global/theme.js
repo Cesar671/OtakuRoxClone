@@ -6,6 +6,17 @@ const DARK = "dark"
 export const tokens = (mode) => {
     
     return (mode === LIGHT ? {
+        menu: {
+          100: "#ffffff",
+          200: "#ffffff",
+          300: "#ffffff",
+          400: "#ffffff",
+          500: "#ffffff",
+          600: "#cccccc",
+          700: "#999999",
+          800: "#666666",
+          900: "#333333"
+        },
         footer: {
             100: "#d2d4d5",
             200: "#a5a9ab",
@@ -39,7 +50,29 @@ export const tokens = (mode) => {
             800: "#663207",
             900: "#331904"
         },
+        red: {
+          100: "#fcdde4",
+          200: "#f9bcc9",
+          300: "#f59aad",
+          400: "#f27992",
+          500: "#ef5777",
+          600: "#bf465f",
+          700: "#8f3447",
+          800: "#602330",
+          900: "#301118"
+},
     }: {
+        menu: {
+          100: "#030506",
+          200: "#07090c",
+          300: "#0a0e11",
+          400: "#0e1217",
+          500: "#11171d",
+          600: "#41454a",
+          700: "#707477",
+          800: "#666666",
+          900: "#cfd1d2",
+        },
         footer: {
             100: "#d2d4d5",
             200: "#a5a9ab",
@@ -73,6 +106,17 @@ export const tokens = (mode) => {
             800: "#663207",
             900: "#331904"
         },
+        red: {
+          100: "#fcdde4",
+          200: "#f9bcc9",
+          300: "#f59aad",
+          400: "#f27992",
+          500: "#ef5777",
+          600: "#bf465f",
+          700: "#8f3447",
+          800: "#602330",
+          900: "#301118"
+},
     })
 };
 
@@ -82,7 +126,6 @@ export const useMode = () => {
     const [mode, setMode] = useState(LIGHT)
     const useModeF = useMemo(() => ({
         toogleMode: () => setMode((prev) => {
-            console.log(prev)
             return (prev === LIGHT ? DARK: LIGHT)
         }),
     }),[])
