@@ -1,14 +1,17 @@
 import React from "react";
 import "./ContainerRight.css";
+import EntradaDestacada from "./EntradaDestacado";
+import RecomendList from "./RecomendList";
+import Categorias from "./Categorias";
+import Pedidos from "./Pedidos";
 
 const ContainerRight = () => {
   return (
     <div className="container-right">
-      derecha
-      {/* <EntradaDestacada />
+      <EntradaDestacada />
       <RecomendList />
       <Categorias />
-      <Pedidos /> */}
+      <Pedidos />
     </div>
   );
 };

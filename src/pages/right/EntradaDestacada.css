@@ -1,0 +1,65 @@
+.featuredPost {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #1e272e;
+  line-height: 1.55;
+  box-sizing: border-box;
+}
+
+/* featuredPost__image */
+.featuredPostImage img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 992px) {
+  .featuredPostImage {
+    text-align: center;
+  }
+  .featuredPostImage img {
+    width: 60%;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .featuredPostImage img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+  }
+}
+
+/* featuredPost__title */
+.featuredPostTitle {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+  padding: 16px 0;
+  color: #1e272e;
+  transition: all 0.3s ease;
+}
+
+.featuredPostTitle:hover {
+  color: #ef5777;
+}
+
+.dark .sidebar .widget .featuredPostTitle {
+  color: #fff;
+}
+
+/* featuredPostSummary */
+.dark .sidebar .widget .featuredPostSummary {
+  color: #ccc;
+}
+
+.sidebar .widget .featuredPostSummary {
+  margin: 0;
+  padding: 8px 16px;
+  font-size: 13px;
+  line-height: 1.7;
+  font-weight: 500;
+  color: rgba(30, 39, 46, 0.75);
+  box-shadow: 3px 0 inset #ef5777;
+}
