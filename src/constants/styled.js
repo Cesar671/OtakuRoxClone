@@ -11,11 +11,6 @@ const GRAYSUAVE = "#cccccc";
 const Widget = styled.div`
   margin: 16px;
   border-radius: 8px;
-  ${(props) =>
-    props.movil === false &&
-    "@media screen and (max-width: 992px) { display: none; }"}
-  background: ${(props) => (props.isDarkMode ? BLACK : WHITE)};
-  color: ${(props) => (props.isDarkMode ? WHITE : BLACK)};
 `;
 
 const WidgetTitle = styled.h2`
@@ -115,12 +110,6 @@ const TagsCloud = styled.ul`
       & > span {
         opacity: 0.5;
       }
-      &:hover {
-        background: ${(props) => (props.isDarkMode ? "#11171d" : RED)};
-        color: ${(props) => (props.isDarkMode ? WHITE : BLACK)};
-      }
-      background: ${(props) => (props.isDarkMode ? GRAY : "#1E272E1A")};
-      color: ${(props) => (props.isDarkMode ? WHITE : "#1E272EBC")};
     }
     @media screen and (max-width: 768px) {
       width: 33.333%;

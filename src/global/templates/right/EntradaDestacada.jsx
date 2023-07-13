@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { tokens, ColorThemeContext } from "../../theme";
 import {
   Widget,
   WidgetTitle,
@@ -8,6 +9,8 @@ import {
 import { destacados } from "../../../constants/destacados";
 
 const EntradaDestacada = () => {
+  const { mode, toogleMode } = React.useContext(ColorThemeContext);
+  const colors = tokens(mode);
   const shuffleArray = (array) => {
     const shuffled = [...array];
     for (let i = shuffled.length - 1; i > 0; i--) {
@@ -17,8 +20,17 @@ const EntradaDestacada = () => {
     return shuffled;
   };
   const randomElements = shuffleArray(destacados).slice(0, 1);
+  /* ${(props) =>
+    props.movil === false &&
+    "@media screen and (max-width: 992px) { display: none; }"} */
   return (
-    <Widget movil={false}>
+    <Widget
+      className="no-movil"
+      style={{
+        backgroundColor: colors.menu[500],
+        color: colors.primary[900],
+      }}
+    >
       <WidgetTitle>Entrada destacada</WidgetTitle>
       <WidgetContent>
         {randomElements.map((item) => (
