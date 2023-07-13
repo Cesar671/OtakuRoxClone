@@ -4,8 +4,8 @@ import {
   WidgetTitle,
   WidgetContent,
   ULIMG,
-} from "../../constants/styled";
-import { recomendados } from "../../constants/recomendados";
+} from "../../../constants/styled";
+import { recomendados } from "../../../constants/recomendados";
 
 const RecomendList = () => {
   const shuffleArray = (array) => {

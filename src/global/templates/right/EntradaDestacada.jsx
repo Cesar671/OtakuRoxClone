@@ -4,8 +4,8 @@ import {
   WidgetTitle,
   WidgetContent,
   Destacado,
-} from "../../constants/styled";
-import { destacados } from "../../constants/destacados";
+} from "../../../constants/styled";
+import { destacados } from "../../../constants/destacados";
 
 const EntradaDestacada = () => {
   const shuffleArray = (array) => {

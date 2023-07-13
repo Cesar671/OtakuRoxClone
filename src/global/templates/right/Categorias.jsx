@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import { categorias_list } from "../../constants/categorias";
+import { categorias_list } from "../../../constants/categorias";
 import {
   Widget,
   WidgetTitle,
   WidgetContent,
   TagsCloud,
-} from "../../constants/styled";
+} from "../../../constants/styled";
 
 const Categorias = () => {
   return (

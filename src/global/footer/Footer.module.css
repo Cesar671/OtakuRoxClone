@@ -1,7 +1,6 @@
 #footerContainer {
     display: flex;
     justify-content: center;
-    width: 100%;
     align-items: center;
     gap: 15px;
     flex-wrap: wrap;
