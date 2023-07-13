@@ -1,0 +1,57 @@
+/* tags-cloud */
+.sidebar .widget .tags-cloud {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar .widget .tags-cloud li {
+  list-style: none;
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar .widget .tags-cloud li {
+    width: 33.333%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar .widget .tags-cloud li {
+    width: 100%;
+  }
+}
+
+.sidebar .widget .tags-cloud li a {
+  padding: 6px 8px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  border-radius: 4px;
+  font-weight: 700;
+  background: rgba(30, 39, 46, 0.1);
+  color: rgba(30, 39, 46, 0.75);
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.sidebar .widget .tags-cloud li a span {
+  opacity: 0.5;
+}
+
+.sidebar .widget .tags-cloud li a:hover {
+  background: #ef5777;
+  color: #fff;
+}
+
+.dark .sidebar .widget .tags-cloud li a {
+  background: #1e272e;
+  color: #fff;
+}
+
+.dark .sidebar .widget .tags-cloud li a:hover {
+  background: #11171d;
+}

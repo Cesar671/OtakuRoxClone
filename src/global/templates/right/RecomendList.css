@@ -1,0 +1,148 @@
+/* popularPosts */
+.sidebar .widget .popularPosts {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar .widget .popularPosts li {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px 0;
+  align-items: flex-start;
+  position: relative;
+}
+
+.sidebar .widget .popularPosts--overlay li {
+  border-radius: 8px;
+}
+
+.sidebar .widget .popularPosts--overlay {
+  position: relative;
+}
+
+.sidebar .widget .popularPosts--overlay li {
+  padding: 0;
+  margin-bottom: 16px;
+  display: block;
+  height: 156px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar .widget .popularPosts--overlay li {
+    height: 136px;
+  }
+}
+
+.sidebar .widget .popularPosts--overlay li:hover img {
+  opacity: 0.75;
+}
+
+.sidebar .widget .popularPosts--overlay li:before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #ef5777;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  width: 24px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 8px;
+  pointer-events: none;
+  content: attr(data-count);
+  z-index: 301;
+}
+
+.sidebar .widget .popularPosts--overlay .popularPosts__image {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar .widget .popularPosts--overlay .popularPosts__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.sidebar .widget .popularPosts--overlay .popularPosts__content {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+}
+
+.sidebar .widget .popularPosts--overlay .popularPosts__content a {
+  color: #fff;
+}
+
+.sidebar .widget .popularPosts--overlay .popularPosts__content a:hover {
+  color: #fff;
+}
+
+/* popularPosts__image */
+.sidebar .widget .popularPosts__image {
+  width: 48px;
+  height: 48px;
+}
+
+.sidebar .widget .popularPosts__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.sidebar .widget .popularPosts--overlay .popularPosts__image {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar .widget .popularPosts--overlay .popularPosts__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* popularPosts__content */
+.sidebar .widget .popularPosts__content {
+  padding: 16px;
+  padding-top: 0;
+  width: calc(100% - 48px);
+}
+
+.sidebar .widget .popularPosts__content a {
+  color: #1e272e;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+  display: block;
+}
+
+.sidebar .widget .popularPosts__content a:hover {
+  color: #ef5777;
+}
+
+.sidebar .widget .popularPosts--overlay .popularPosts__content {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+}
+
+.sidebar .widget .popularPosts--overlay .popularPosts__content a {
+  color: #fff;
+}
+
+.sidebar .widget .popularPosts--overlay .popularPosts__content a:hover {
+  color: #fff;
+}
